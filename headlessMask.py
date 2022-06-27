@@ -14,16 +14,15 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#from qgis.core import QgsApplication, QgsProject, QgsLayout, QgsLayoutManager, QgsReadWriteContext, QgsLayoutExporter
 import qgis.core
 from qgis.gui import QgsMapCanvas, QgsLayerTreeMapCanvasBridge
 from PyQt5.QtCore import QFile, QFileInfo, QByteArray, QTextStream, QSettings
 from PyQt5.QtXml import QDomDocument
 import sys
 from os.path import expanduser
-from os import environ
 
 # Plugin paths. Currently tested only on Debian. Needs updating for other OSs.
+# QGIS should help us here.
 sys.path.append('/usr/share/qgis/python/plugins')
 sys.path.append(expanduser('~') + '/.local/share/QGIS/QGIS3/profiles/default/python/plugins/')
 
